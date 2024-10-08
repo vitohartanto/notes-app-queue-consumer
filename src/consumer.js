@@ -5,6 +5,7 @@ const MailSender = require('./MailSender');
 const Listener = require('./listener');
 
 const init = async () => {
+  console.log('Hello Gais');
   const notesService = new NotesService();
   const mailSender = new MailSender();
   const listener = new Listener(notesService, mailSender);
